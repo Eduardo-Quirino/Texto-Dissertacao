@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gerador de Redação Dissertativa</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Gerador de Redação Dissertativa</h1>
+  </header>
+  <main>
+    <form onsubmit="gerarRedacao(); return false;">
+      <label for="texto">Digite o tema da redação:</label>
+      <textarea id="texto" rows="5" required></textarea>
+      <button type="submit">Gerar Redação</button>
+    </form>
+    <div id="resultado">
+      <!-- A redação gerada pelo GPT-3 será exibida aqui -->
+    </div>
+  </main>
+  <script src="openai.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
