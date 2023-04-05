@@ -103,3 +103,4 @@ Este é um exemplo básico de como você pode usar HTML5, CSS3, JavaScript e a t
 
 [^conf API]: https://youtu.be/P6alV1-hydc
 
+chave API = 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
