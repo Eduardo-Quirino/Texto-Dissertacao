@@ -104,3 +104,71 @@ Este é um exemplo básico de como você pode usar HTML5, CSS3, JavaScript e a t
 [^conf API]: https://youtu.be/P6alV1-hydc
 
 chave API = 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
+
+# **CORREÇÕES**
+
+No HTML, não foram encontrados erros.
+
+No CSS, também não foram encontrados erros.
+
+No entanto, no JavaScript, há alguns erros e problemas que devem ser corrigidos:
+
+1. O arquivo `config.js` deve ser importado antes do arquivo `script.js`. Então, troque as linhas:
+
+```
+htmlCopy code<script src="config.js"></script>
+<script src="script.js"></script>
+```
+
+para:
+
+```
+htmlCopy code<script src="script.js"></script>
+<script src="config.js"></script>
+```
+
+1. Na definição do objeto `config`, a linha `javascript:` deve ser removida. Então, troque:
+
+```
+javascriptCopy codejavascript:const config = {
+  API_KEY: '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'
+};
+```
+
+para:
+
+```
+javascriptCopy codeconst config = {
+  API_KEY: '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'
+};
+```
+
+1. Na definição do módulo `config`, a palavra `export` deve ser removida. Então, troque:
+
+```
+javascriptCopy code
+export default config;
+```
+
+para:
+
+```
+javascriptCopy code
+module.exports = config;
+```
+
+1. Na importação do módulo `openai`, o caminho deve ser alterado para `'@openai/api'`. Então, troque:
+
+```
+javascriptCopy code
+import openai from 'openai';
+```
+
+para:
+
+```
+javascriptCopy code
+import openai from '@openai/api';
+```
+
+Com essas correções, o código deve funcionar corretamente.

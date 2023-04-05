@@ -1,4 +1,4 @@
-import openai from 'openai';
+import openai from '@openai/api';
 import config from './config.js';
 
 const openaiInstance = new openai(config.API_KEY);
